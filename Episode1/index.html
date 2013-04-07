@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<title>Moneyless</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
+		</script>
+		<!--<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>-->
+		<link rel="stylesheet" href="style_parallax.css" />
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>			
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>   <!-- lien vers la bibli jquery-->
+
+    <!--script pour les mouvement fluide entre les ancres: dans la démo sur les liens vidéo, etc)  ne pas oublier le lien vers la bibliothèque jquery-->
+    <script type="text/javascript">
+    $(function() {
+      var scrollElement = $("html");
+      var scrollValue = scrollElement.scrollTop();
+      if (scrollElement.scrollTop(scrollValue + 1).scrollTop() == scrollValue) {
+        scrollElement = $("body");
+      }
+      else {
+        scrollElement.scrollTop(scrollValue);
+      }
+      $("a[href*=#]").click(function() {
+        if (location.hostname+location.pathname+location.search == this.hostname+this.pathname.replace(/^([^\/].*)/, "/$1")+this.search) {
+          var hash = "#"+$(this).attr("href").split("#")[1];
+          var target = $(hash == "#" ? body : hash);
+          if (target.length) {
+            var id = target.attr("id");
+            target.attr("id", "");
+            location.hash = hash;
+            target.attr("id", id);
+            var to = target.offset().top;
+            scrollElement.animate({ scrollTop: to }, {
+              duration: Math.abs($(window).scrollTop() - to) * 0.75, <!--vitesse reglable ici-->
+              complete: function() { target.focus(); }
+            });
+            return false;
+          }
+        }
+      });
+    });
+        </script>
+
+
+	<script>
+	var longueur = 0;
+	function longueurpage{
+	if (longueur<0.5)
+	longueur=longueur+0.2;
+	return longueur;
+	}
+	</script>
+	<!--Pour cacher ou afficher des éléments-->
+	
+
+	<style>
+	<!--style pour le menu changeant de style au survol, à mettre dans le fichier css-->
+	#menu{display: block; position: fixed; top: 0px; width: 100%; height: 112px;  background-image: url(top-area.png); background-repeat:repeat;}
+	#menu a{font-size: 2Opx; width:150px; height:145px; padding-top: 50px; padding-bottom: 40px; padding-right: 5px; padding-left: 0px; margin-top: 0px;}
+	#menu li a:hover{background-color: #aa955d; width:200px; height:145px; padding-top: 50px; padding-bottom: 45px; padding-right: 5px; padding-left: 0px; margin-top: 0px;}
+	
+	#menu li img {display: absolute; width: 30px; margin-right: 5px; margin-bottom: -4px; }
+	#menulogo{display: block; position: fixed; top: 0px; width: 100%; height: 112px; baackground-color: rgb(200, 200, 150); }
+	#menulogo a{font-size: 2Opx; }
+
+
+	</style>
+	
+	</head>
+
+	
+
+	
+	
+	<body>
+
+	<!-- ancien style pour le menu :
+	<div id="menu" style="position: fixed; top: 0px; width: 1100px; height: 112px; background-color: rgb(200, 200, 150); font-style: normal; float: right; margin-left: 500px;
+	background-image: url(top-area.png); background-repeat:repeat;">
+		
+		<ul>
+		<li style="display : block; float: left; margin-left: 80px;  margin-top: 25px; width :auto;"> <a href="#slide2" ><img style="width: 30px; height: 30px; margin-left: 20px; margin-right: 5px; vertical-align: bottom;"  src="http://side-ways.net/moneyless/TV.png"><h10>VIDEO</h10></a></li>
+		<li style="display : block; float: left; margin-left: 40px; margin-top: 25px; width :auto;"> <a href="#slide3" ><img style="width: 30px; height: 30px; margin-left: 0px; margin-right: 5px; vertical-align: bottom;" src="http://side-ways.net/moneyless/file.png"><h10>MAGAZINE</h10></a></li>
+		<li style="display : block; float: left; margin-left: 40px; margin-top: 25px; width :auto;"><a href="#slide4" ><img style="width: 30px; height: 30px; margin-left: 0px; margin-right: 5px; vertical-align: bottom;" src="http://side-ways.net/moneyless/work.png"><h10>RESSOURCES</h10></a></li>
+		</ul>
+		
+	</div>
+	
+	<div id="menulogo" style="position: fixed; top: 0px; width: 600px; height: 112px; background-color: rgb(200, 200, 150); font-style: normal;  padding-top: 20px; margin-top:-20px;
+	background-image: url(top-area.png); background-repeat:repeat;">
+	<li style="display : block; float: left;  margin-left: 35%; margin-top: 0px; "> <a href="http://side-ways.net"><img  src="http://side-ways.net/wp-content/uploads/2013/03/Sideways_v2_black.png"></a></li>
+	</div>-->
+	
+	<!--nouveau style, banière de même type que le site wordpress, pas de "bougeotte" des liens quand on passe dessus-->
+	<div id="menulogo" style="position: fixed; top: 0px; width: 100%; height: 112px; background-color: rgb(200, 200, 150); font-style: normal;  
+	background-image: url(top-area.png); background-repeat:repeat;"> <!--supprimer le background-image pour revenir à des fonds unis-->
+	<li style="display : block; float: left;  margin-left: 15.5%; "> <a href="http://side-ways.net"><img style="border: 0px;" src="http://side-ways.net/wp-content/uploads/2013/03/LogoSitev21.png"></a></li>
+	</div>
+	
+	<div id="menu" style="position: fixed; top: 0px; width: 100%; height: 112px; background-color: rgb(200, 200, 150); font-style: normal; float: left; margin-left: 520px;
+	background-image: url(top-area.png); background-repeat:repeat;">
+		<ul>
+		<li style="display : block; float: left; margin-left: 80px; margin-top: 25px; width :auto;"> <a href="#slide2" ><img style="border: 0px; width: 35px; height: 35px; margin-left: 0px; margin-right: 10px; margin-top: -5px; vertical-align: bottom;"  src="http://side-ways.net/moneyless/TV.png"><h10>VIDEO</h10></a></li>
+		<li style="display : block; float: left; margin-left: 40px; margin-top: 25px; width :auto;"> <a href="#slide3" ><img style="border: 0px; width: 30px; height: 30px; margin-left: 0px; margin-right: 5px; vertical-align: bottom;" src="http://side-ways.net/moneyless/file.png"><h10>MAGAZINE</h10></a></li>
+		<li style="display : block; float: left; margin-left: 40px; margin-top: 25px; width :auto;"><a href="#slide4" ><img style="border: 0px; width: 30px; height: 30px; margin-left: 0px; margin-right: 5px; vertical-align: bottom;" src="http://side-ways.net/moneyless/work.png"><h10>RESSOURCES</h10></a></li>
+		</ul>
+	</div>
+	
+	
+	
+	
+	
+	<div id="slide1">
+		<div class="slide_inside"style="background-position: 100%; background-attachment: fixed;">
+			<div class="guillemet">“Elf, hacker, striclty moneyless and sateless for over three years”</div>
+			<div class="guillemetb">c’est comme ça que Pavlik se présente sur les réseaux sociaux</div>
+			
+			
+			
+		<div id="Titre"><h1>elf Pavlik</h1><h3>Strictly Moneyless (Teaser)</h3></div>
+		
+		</div>
+	</div>
+	<!--#slide1-->
+	
+	
+	
+	<div id="slide2">
+		<div class="slide_inside" style="background-position: 50%; background-attachment: fixed;" >
+			<div class="fleche"><img src="flecheR.png"/></div>
+			<h4><img height="50px" width="50px" src="http://side-ways.net/moneyless/TV 2.png" class="icon"> Episode Video #1 - elf Pavlik (Teaser)</h4>
+		<center><iframe src="http://player.vimeo.com/video/61478618?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="1000" height="563" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></center>
+		</div>
+	</div>
+	<!--#slide2-->
+	
+	
+	
+	
+	<div id="slide3">
+		<div class="slide_inside" style="background-position: 100%;">
+			<div class="guillemet1">"L’argent n’existe que dans l’imagination humaine, dans une sphère abstraite. C’est une création de l’homme !"</div>
+			
+		<div class="intro" style="background-attachment: fixed;" >Son sac à dos, c’est comme sa maison. Comme il vit à la fois partout et nulle part, à l’intérieur se trouve toute sa vie... Un ordinateur pour travailler, quelques habits pour avoir chaud, un matelas pour dormir, des affaires de toilette, entre autres, un rasoir électrique qu’il trimballe avec lui et qu’il fait durer depuis toutes ces années... Des années sans argent. Pourtant, Pavlik Elf n’est pas malheureux. S’il vit sans argent, c’est par choix. A trente ans, cela fait presque quatre ans qu’il n’utilise plus du tout d’argent.</div>
+		<div class="para1">Tout bascule il y a cinq ans environ. A cette époque, Pavlik vit à San Francisco. Il travaille en tant que développeur web dans une start-up. Sa société est implantée dans le secteur du luxe (vacances en yacht, clubs, jet privé). Déjà, les orientations de l’entreprise ne lui plaisent guère. “Ils ne cherchaient pas à améliorer la qualité des services proposés aux gens, ils voulaient juste faire du business”, se souvient Pavlik. Alors qu’il a toujours été passionné par le web et les nouvelles technologies, il se sent en rupture avec sa société. Parce que lui est mu par une volonté d’améliorer le quotidien des gens. Dérives financières, concurrence, manque d’éthique...
+		<p>Toutes ces choses auxquelles il assiste chaque jour, le mettent profondément mal à l’aise... Jusqu’à ce qu’il refuse de faire quelque chose qu’il ne trouvait pas honnête. Ce jour-là, il est licencié.
+
+Et c’est le début de son aventure sans argent. Aucun plan, pour lui, tout démarre spontanément. “J’avais quelques économies, je pensais trouver un travail pour payer le minimum : les factures de la chambre que je louais et la nourriture”, explique le jeune homme. Petit à petit, il se lance en quête d’un travail mais l’idée de gagner de l’argent ne le séduit plus du tout. Comme il souhaite s’investir dans quelque chose pour aider les gens, il décide de quitter le système monétaire... <i>(l'article complet prochainement)</i></p>
+</div>
+		</div>
+	</div>
+	
+	
+	<div id="slide5">
+		<div class="slide_inside" style="background-position: 100%;">
+			<center><div class="guillemet2">À cette période, je redécouvrais ce dont j'avais vraiment besoin... </div></center>
+			<center><div class="guillemet21">de l'air pour respirer, de l'eau, de la nourriture et d'un endroit pour me reposer</div></center>
+</div></div>
+			
+		
+	<div id="slide6">
+		<div class="slide_inside" style="background-position: 100%;">
+			<div class="para5">Pavlik renoue alors avec certains amis, se fait héberger à droite à gauche, bouge. Il dort aussi dans des parcs. C'est l'été à San Francisco. Le Golden Gate Park devient son fief. Puis il fréquente des refuges pour les sans-domicile, des lieux engagés. " À cette période, je redécouvrais ce dont j'avais vraiment besoin : de l'air pour respirer, de l'eau, de la nourriture et d'un endroit pour me reposer." Et Pavlik de prendre du recul sur sa vie passée : "petit, j'ai été conditionné : tous mes besoins étaient associés à l'argent. Maintenant, si j'arrive à me procurer de la nourriture sans argent, ça veut dire que je n'en ai pas besoin". Progressivement, Pavlik trouve des systèmes pour se nourrir, se loger, prendre une douche... toujours sans le moindre sou en poche. Il multiplie ses efforts, devient même expert en bons plans.</div>
+			<div class="guillemet3">"Au début, ce fut compliqué... Parce que j'ai pris cette décision de manière spontanée et personnelle, il a fallu que j'apprenne à vivre ainsi..."</div>
+			<div class="guillemet5">Un hacker dévoué à... l'amélioration du lien social</div>
+			<div class="para6">Passionné par les systèmes informatiques, il décide de mettre ses compétences au service de son idéologie, pour que les gens se coordonnent mieux et puissent ainsi se distancier de la monnaie. "Si nous développons des systèmes alternatifs, l'argent deviendra obsolète !", résume Pavlik. “Je ne vois pas l'argent exister, c'est quelque chose de virtuel. On ne peut pas le toucher, le goûter, le voir, le sentir ni même l'entendre car il n'existe que dans l'imagination humaine, dans une sphère abstraite. C’est une création de l’homme"</div>
+			<div class="guillemet4">Des rapports humains...</div>
+			<div class="guillemet41">...plus sincères</div>
+			<div class="para7">Selon le jeune homme, l'argent change les relations qu'entretiennent les hommes entre eux. Elles sont souvent plus superficielles. L'argent est source de manipulation. On ne vend pas de la nourriture à une personne pour qu'elle soit contente de la manger ou parce qu'elle a faim. La plupart du temps, on se fiche de ce qu'elle pense. Si on la vend, c'est pour gagner de l'argent et in fine, payer ses factures. "Moi-même, en n'utilisant pas d'argent, j'affecte aussi les décisions d'autrui. Je déclenche des sentiments plus profonds qui viennent de l'intérieur."De fait, sa relation au travail est bouleversée.</div>
+			<div class="para8">Dorénavant, Pavlik est mu par des projets qui font sens et partage une vision commune avec ses interlocuteurs. Il ne courbe plus l’échine au service d’un patron mais collabore avec autrui. Et depuis qu'il a plaqué son travail rémunéré, il bûche peut-être plus qu'avant ! Hacker, c'est comme ça qu'il se définit. Il programme de nouvelles applications pour faire naître plus de solidarité dans le monde. Fervent défenseur de l'intelligence collective, il œuvre pour la licence creative common. Régulièrement, il participe à des hackathons et organise des réunions avec le collectif Ouishare. Des soirées qui mettent à l'honneur des projets novateurs d'économie collaborative.</div>
+
+
+
+
+</div>
+</div>
+
+<div id="slide8">
+		<div class="slide_inside" style="background-position: 50%; background-attachment: fixed;" >
+		<div class="guillemet7">Là... ou ailleurs !</div>
+		<div class="para10">Ce sont ses projets qui le portent, de villes en villes. Car si Pavlik se rend quelque part, ce n'est jamais le fruit du hasard. Son ambition : travailler sur un projet. Son baluchon n’est jamais loin... Toujours prêt à repartir... Pour les longs trajets, quand un projet l’envoie dans une autre capitale, il fait du stop. “Je pars du principe qu’avec ou sans moi, la voiture fera le trajet. Et ce n’est pas mon poids en plus qui induira une grosse différence de dépense énergétique”, explique-t-il.
+		<p></p><p>Et ça marche ! Du moins, ça roule… “J’ai fait du stop jusqu’à Amsterdam, Vienne, Oslo, Barcelone et Paris...” Et Pavlik s’en tire toujours à merveille, ou presque ! Même quand on ne l’attend plus, il débarque avec toute sa bonhomie. Comme le jour de la recontre OuiShare à Berlin en janvier dernier… Alors qu’il est censé animer les échanges, il se retrouve bloqué à Munich la veille du rassemblement. Pourtant, à 19 heures, il était bien là, au garde à vous, fin prêt pour lancer les hostilités.</p></div>
+
+</div>
+</div>
+			
+			<div id="slide7">
+		<div class="slide_inside" style="background-position: 50%; background-attachment: fixed;" >
+		<div class="guillemet6">L'elf de la nature...</div>
+		<div class="para9">Ce sont ses projets qui le portent, de villes en villes. Car si Pavlik se rend quelque part, ce n'est jamais le fruit du hasard. Son ambition : travailler sur un projet. Depuis deux ans, il revient régulièrement à Berlin où il a fait son trou. Il peut d'ailleurs compter maintenant sur un bon nombre d'amis prêts à l'héberger. "Je n'ai pas besoin de grand chose, un canapé ou juste un petit coin pour passer la nuit. Et je m'adapte au rythme de mes hôtes, s'ils se lèvent tôt ou se couchent tard, ce n'est pas un problème pour moi."
+		<p>L'hébergement est rarement source de tracas pour Pavlik. S'il ne trouve nulle part où dormir, il peut tout à fait se coucher dehors, dans un parc ou dans la nature. "Il y a quelques semaines à Rome, je me rendais à un sommet Ouishare", se souvient-il. Tout s'était décidé si rapidement qu'aucun de ses amis n'était à même de lui proposer un canapé. Alors il a passé la nuit dans un réserve naturelle. "Il ne faisait pas froid, 15 ou 16°C, j'ai posé mon matelas et mon duvet. Ce fut un incroyable moment de sereinité avec les oiseaux à profiter du ciel étoilé !"</p>
+<p>Pavlik entre très vite en communion avec la nature. Rien de surprenant quand on sait qu'il se voit et se décrit comme un elf. C'est même devenu son nom. Pavlik a cessé d'utiliser son ancien nom de famille, désormais il se nomme elf Pavlik.</p> <p>Pourquoi un elf ? C'est un être qui participe à la vie sur Terre, comme si c'était un jeu. "Je respecte son environnement et les autres participants pour que nous vivions tous en harmonie. " Sans oublier l’autre symbolique : le lutin de Noël. "Je travaille pour rendre les gens plus heureux et pour qu'ils sourient". Une mission à l'image des lutins qui fabriquent les cadeaux pour apporter du bonheur aux enfants. "Pas besoin d'argent ni d'échange matériel, ma récompense, je la trouve dans le bonheur que je procure aux gens", sourit l'elf.</p>
+</div>
+			
+			
+</div>
+</div>
+
+
+			
+	<div id="slide4">
+		<div class="slide_inside" style="background-position: 50%; background-attachment: fixed;" >
+		<div class="Ressources">Ressources</div>
+				<div class="para2"><h21>CREDIT EPISODE #1</h21>
+				<p></p>
+				<p class="lien">Pour finaliser ce premier épisode, de nombreuses personnes ont collaboré à sa réalisation. Benoit <a href="http://twitter.com/webreporters">(@webreporters)</a> et Anaëlle <a href="http://twitter.com/anaelle">(@anaelle)</a> se sont rendu à Berlin pour filmer, photographier, et prendre le son. Au même moment à Paris, Alexandra supervisait le travail. Une petite équipe a ensuite rapidement pris forme. Sylvain <a href="http://twitter.com/ChauxSylvain">(@ChauxSylvain)</a> est ainsi arrivé pour épauler Benoit sur le montage, Timothy <a href="http://twitter.com/timothyduquesne">(@timothyduquesne)</a> et Nicolas ont quant à eux, participé à l'écriture de la voix off de la seconde version. Anaëlle s'est chargée de l'écriture de l'article, et Elie est venu peaufiner les codes du site Sideways. Sans oublier notre compositeur préféré, Looping <a href="http://www.beatzandup.fr">(beatzandup.fr)</a> ! Un grand merci à tout le monde !</p></div>
+				<p></p>
+				<div class="para3"><h21>REMERCIEMENTS</h21>
+				<p></p>
+				<p class="lien">La Fabric @Berlin, Pavlik <a href="http://twitter.com/elfpavlik">(@elfpavlik)</a> et ses amis, Le Labo de l'Edition <a href="http://labodeledition.com">(www.labodeledition.com)</a>, Nicolas Rodelet, Artefacts <a href="http://artefacts.coop">(www.artefacts.coop)</a> et Emmanuel Doudat</p>
+				<p></p></div>
+
+				<div class="para4"><h21>FINANCEMENT ET CONTRIBUTIONS </h21>
+				<p></p>
+				<p>Cet épisode a été entièrement auto-financé. Ce fut notre épisode pilote pour travailler l'écriture et le style que nous souhaitions donner à cette série.</p>
+				<p></p></div>
+		
+					
+		<div class="Fin">L'épisode complet disponible début mai</div>
+			
+	</div>
+	</div>
+	
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript_scroll_1.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		//.parallax(xPosition, adjuster, inertia, outerHeight) 
+		//xPosition - Position horizontale de l'élément (css)
+		//adjuster - La position Y de départ
+		//inertia - Vitesse en fonction du Scroll. Exemple: 0.1 est 1/10 ème de la vitesse du scroll. 2 = deux fois la vitesse du scroll.
+		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+		//$('#slide2').onmouseover(function(){
+			
+			$('#slide1').parallax("center", 1000, -0.1, true);   
+			$('#slide2').parallax("center", 900, 0.0, true);
+			$('#slide3').parallax("center", 2900, 0.1, true);
+			$('#slide6').parallax("center", 8000, -0.1, true);<!-- remettre le 0.1 à 0.0 pour supprimer l'effet parallax mouvant dans le magazine-->
+			})
+	</script>
+	
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39265500-1']);
+  _gaq.push(['_setDomainName', 'side-ways.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+	</body>
+</html>

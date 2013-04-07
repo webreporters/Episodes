@@ -1,0 +1,617 @@
+﻿
+/* Généralités */
+body {
+	margin: 0;
+	padding: 0;
+	color:#fff;
+	font: normal 90% 'Droid Serif', serif;
+	
+}
+
+h2 {
+	font-size: 20px;
+	font-weight:400;
+	color: #2b2c30;
+}
+
+h1 {
+	font-size: 60px;
+	font-family: Walkway Expand ;
+	font-weight:400;
+	color: #fff;
+	background-color: #5c0f0f;
+background-position: inherit ;
+border-top:  solid 0px #fff;
+padding-left: 17%;
+opacity: 1;
+margin-top: 445px;
+text-align: left;
+padding-bottom: 40px;
+padding-top: 25px;
+}
+
+h21 {
+	font-size: 20px;
+	font-weight:400;
+	color: #fff;
+	font-family: 'Droid sans Serif', sans serif;
+	
+}
+
+h3 {
+	font-size: 30px;
+	font-family: Walkway Expand ;
+	font-weight: 0;
+	color: #fff;
+	width: 600px;
+	text-align: center;
+	float: right;
+	margin-top: -125px;
+margin-right: 60px;
+background-position: inherit ;
+}
+
+h4 {font-size: 24px;
+	font-family: Walkway Expand ;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+		
+	margin-top: 0px;
+padding-bottom: 0px;
+}
+	
+.icon { margin-bottom: -8px;
+	
+	}
+
+h10 {
+font-size: 16px;
+line-height: 0px;
+margin-top: -10px !important;
+padding-top: 7px;
+font-family: inherit;
+color: #2b2c30;
+font-weight: 400;
+color: inherit;
+font-family: helvetica ;
+}
+
+
+
+ 
+
+a {
+	font-weight: 400;
+	color:#2b2c30;
+font: normal;
+font-style: normal;
+text-decoration:  none !important;
+}
+
+.lien a {
+	font-weight: 400;
+	color:#fff;
+font: normal;
+font-style: normal;
+text-decoration:  underline !important;
+}
+
+
+
+img {
+width: auto;}
+
+logo {margin: 20px 0;
+}
+
+
+/* Mise en place des différentes parties / slides */
+#slide1 {
+	height: 872px;
+	
+	
+}
+
+#slide3 {
+	height: 1500px;
+	padding-top:0px;
+	
+}
+
+#slide2 {
+	height: 750px;
+	padding-top:10px;
+	
+	 
+}
+
+#slide4 {
+	height: 980px;
+	padding-top:0px;
+}
+	
+#slide5 { height: 215px;
+	}
+	
+#slide6 { height: 2100px;
+	}
+	
+#slide7 { height: 1000px;
+	}
+	
+#slide8 { height: 1000px;
+	}
+
+	
+	
+	#slide1 {
+	   background: url(bonnet7.jpg) center 0 no-repeat fixed;
+	}
+
+	#slide2 {
+	   background: rgba(0, 0, 0, 0.5) center 0 no-repeat fixed;
+	   
+	}
+
+	#slide3 {
+	   background: url(http://side-ways.net/moneyless/capuche.jpg) center 0 no-repeat fixed;
+	   border-top : solid 0px #000;
+	}
+	
+	#slide4 {
+	   background: url(http://side-ways.net/moneyless/itw.jpg) center 0 no-repeat fixed;
+	}
+
+	#slide5 {background: rgba(0, 0, 0, 0.5) center 0 no-repeat fixed;}
+
+	#slide6 {background: url(pelote.jpg) center 0 no-repeat fixed;}
+	
+	#slide7 {background: url(Iwalkintheforest2.jpg) center 0 no-repeat fixed;
+	border-top : solid 55px #5c0f0f;}
+	
+	#slide8 {background: url(PavlikWorking.jpg) center 0 no-repeat fixed;
+	border-top : solid 0px #5c0f0f;}
+	
+	
+	/* Gestion du contenu */
+.slide_inside {
+	width: 100%;
+	
+}
+
+#slide1  .slide_inside {
+	width: 100%;
+	text-align: right;
+	padding-top: 300px;
+	position:  inherit;
+	 
+	
+}
+
+#slide2 .slide_inside p {
+	width: 500px;
+	text-align:center;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+
+
+
+#slide3 .slide_inside {
+	
+	margin-top: 0px;
+	padding:0px;
+	
+	
+}
+
+#slide5 .slide_inside {
+	
+	margin-top: 0px;
+	padding-top:100px;
+	}
+
+#slide7 .slide_inside {
+	
+	margin-top: 0px;
+	padding-top:0px;
+	
+	}
+
+
+#titre {
+	width: 900px;
+	text-align: right;
+	padding-top: 200px;
+	}
+	
+#slide1 .slide_inside p {
+	width: 300px;
+	text-align:right;
+	margin-top:0px;
+	padding-left: 60%;
+	padding:0px;
+	
+}
+
+.fleche {
+	text-align: center;
+	margin-top: -35px;
+	}
+	
+.fleche2 {
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 0px;
+	}
+
+.intro {
+	width: 350px;
+	text-align: justify;
+	margin-top: 300px ;
+	margin-right: -350px;
+	padding:10px;
+	font-size: 16px;
+	color:#000;
+	line-height: 26px;
+	font-style: bold;
+	float: right;
+	position:  inherit;
+	
+
+}
+
+.guillemet {
+	width: 550px !important;
+	text-align:center;
+	margin-top: 120px;
+	margin-right: 80px;
+	padding:0px;
+	font-size: 44px;
+	color:#fff;
+	line-height: 38px;
+	float: right;
+	position:  inherit;
+	
+	font-family: 'Passion One', cursive;
+	
+}
+
+.guillemetb {
+	width: 550px !important;
+	text-align:center;
+	margin-top: 200px;
+	margin-right: -545px;
+	padding:0px;
+	font-size: 18px;
+	color:#fff;
+	line-height: 24px;
+	float: right;
+	position:  inherit;
+	font-style: normal;
+}
+
+.guillemet1 {
+	width: 350px !important;
+	text-align:left;
+	margin-top: 70px;
+	margin-right: 50px;
+	padding:0px;
+	font-size: 24px;
+	color:#000;
+	line-height: 38px;
+	float: right;
+	position:  inherit;
+	font-style: italic;
+}
+
+.guillemet2 {
+	width: 100% !important;
+	float: right;
+	text-align:right;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+	margin-right: 40px;
+	margin-top: -20px;
+	font-size: 16px;
+	color:#fff;
+	line-height: 24px;
+	
+	position: inherit;
+	font-style: normal;
+}
+
+.guillemet21 {
+	width: 800px !important;
+	text-align:right;
+	margin-top: 0px;
+	margin-right: 40px;
+	font-family: 'Passion One', cursive;
+	padding:0px;
+	font-size: 50px;
+	color:#fff;
+	line-height: 45px;
+	position: inherit;
+	font-style: normal;
+	float: right;
+}
+
+.guillemet3 {
+	width: 350px !important;
+	text-align:center;
+	
+	margin-top: 400px;
+	margin-right: 40px;
+	padding:0px;
+	font-size: 24px;
+	color:#000;
+	line-height: 38px;
+	float: right;
+	position: inherit;
+	font-style: bold, italic;
+}
+
+.guillemet4 {
+	width: 400px !important;
+	text-align:center;
+	font-family: 'Passion One', cursive;
+	margin-top: 1230px;
+	margin-left: -440px;
+	padding:0px;
+	font-size: 40px;
+	color:#000;
+	line-height: 38px;
+	float: left;
+	position: inherit;
+	font-style: normal;
+}
+
+.guillemet41 {
+	width: 400px !important;
+	text-align:left;
+	font-family: 'Passion One', cursive;
+	margin-top: 1430px;
+	margin-right: -410px;
+	padding:0px;
+	font-size: 40px;
+	color:#000;
+	line-height: 38px;
+	float: right;
+	position: inherit;
+	font-style: normal;
+}
+
+.guillemet5 {
+	width: 420px !important;
+	text-align:left;
+	font-family: 'Passion One', cursive;
+	margin-top: 700px;
+	margin-left: -350px;
+	padding:0px;
+	font-size: 40px;
+	color:#000;
+	line-height: 38px;
+	float: left;
+	position: inherit;
+	font-style: normal;
+}
+
+.guillemet6 {
+	width: 400px !important;
+	text-align:left;
+	font-family: 'Passion One', cursive;
+	margin-top: 125px;
+	
+	padding:0px;
+	font-size: 40px;
+	color:#000;
+	line-height: 38px;
+	float: right;
+	position: inherit;
+	font-style: normal;
+}
+
+.guillemet7 {
+	width: 400px !important;
+	text-align:left;
+	font-family: 'Passion One', cursive;
+	margin-top: 75px;
+	margin-left: 25px; 
+	padding:0px;
+	font-size: 40px;
+	color:#fff;
+	line-height: 38px;
+	float: left;
+	position: inherit;
+	font-style: normal;
+}
+
+.para1 {
+	width: 350px;
+	text-align: justify;
+	margin-top: 680px;
+	margin-right: -370px;
+	padding:10px;
+	font-size: 14px;
+	color:#000;
+	line-height: 24px;
+	float: right;
+	position:  inherit;
+	
+
+}
+
+.Ressources {
+	font-size: 40px;
+	font-family: Walkway Expand ;
+	font-weight:400;
+	color: #fff;
+	background-color: #5c0f0f;
+background-position: inherit ;
+padding-left: 13%;
+
+opacity: 1;
+margin-top: 0px;
+text-align: left;
+padding-bottom: 30px;
+padding-top: 20px;
+}
+
+.Fin {
+	font-size: 30px;
+	font-family: Walkway Expand ;
+	font-weight:400;
+	color: #fff;
+	background-color: #5c0f0f;
+background-position: inherit ;
+
+
+opacity: 1;
+margin-top: 820px;
+text-align: center;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+.para2 {
+	width: 400px;
+	text-align:left;
+	margin-top: 50px;
+	margin-left: 150px;
+	padding:10px;
+	font-size: 14px;
+	color:#fff;
+	line-height: 24px;
+	float: left;
+	position:  inherit;
+	background-color: rgba(0, 0, 0, 0.5);
+background-position: inherit ;
+	
+
+}
+
+.para3 {
+	width: 400px;
+	text-align:left;
+	margin-top: 420px;
+	margin-left: -420px;
+	padding:10px;
+	font-size: 14px;
+	color:#fff;
+	line-height: 24px;
+	float: left;
+	position:  inherit;
+	background-color: rgba(0, 0, 0, 0.5);
+background-position: inherit ;
+	
+
+}
+
+.para4 {
+	width: 400px;
+	text-align:left;
+	margin-top: 600px;
+	margin-left: -420px;
+	padding:10px;
+	font-size: 14px;
+	color:#fff;
+	line-height: 24px;
+	float: left;
+	position:  inherit;
+	background-color: rgba(0, 0, 0, 0.5);
+background-position: inherit ;
+	
+
+}
+
+.para5 {
+	width: 350px;
+	text-align: justify;
+	margin-top: 50px;
+	margin-left: 40px;
+	padding:10px;
+	font-size: 14px;
+	color:#000;
+	line-height: 24px;
+	float: left;
+	position:  inherit;
+	background-color: rgba(0, 0, 0, 0);
+background-position: inherit ;
+	
+
+}
+
+.para6 {
+	width: 350px;
+	text-align: justify;
+	margin-top: 850px;
+	margin-right: -350px;
+	padding:10px;
+	font-size: 14px;
+	color:#000;
+	line-height: 24px;
+	float: right;
+	position:  inherit;
+	background-color: rgba(0, 0, 0, 0);
+background-position: inherit ;
+}
+
+.para7 {
+	width: 350px;
+	text-align: justify;
+	margin-top: 1300px;
+	margin-left: -420px;
+	padding:10px;
+	font-size: 14px;
+	color:#000;
+	line-height: 24px;
+	float: left;
+	position:  inherit;
+	background-color: rgba(0, 0, 0, 0);
+background-position: inherit ;
+}
+
+.para8 {
+	width: 350px;
+	text-align: justify;
+	margin-top: 1500px;
+	margin-right: -370px;
+	padding:10px;
+	font-size: 14px;
+	color:#000;
+	line-height: 24px;
+	float: right;
+	position:  inherit;
+	background-color: rgba(0, 0, 0, 0);
+background-position: inherit ;
+}
+
+.para9 {
+	width: 500px;
+	text-align: justify;
+	margin-top: 200px;
+	margin-right: -300px;
+	padding:10px;
+	font-size: 14px;
+	color: #000;
+	line-height: 24px;
+	float: right;
+	position: ;
+	background-color: rgba(0, 0, 0, 0.1);
+	background-position: inherit ;
+}
+
+.para10 {
+	width: 450px;
+	text-align: justify;
+	margin-top: 150px;
+	margin-left: -400px;
+	padding:0px;
+	font-size: 14px;
+	color: #fff;
+	line-height: 24px;
+	float: left;
+	background-position: inherit ;
+}
