@@ -131,16 +131,16 @@ logo {margin: 20px 0;
 	padding-top:0px;
 }
 	
-#slide5 { height: 215px;
+#slide5 { height: 150px;
 	}
 	
 #slide6 { height: 2100px;
 	}
 	
-#slide7 { height: 1000px;
+#slide7 { height: 1200px;
 	}
 	
-#slide8 { height: 1000px;
+#slide8 { height: 800px;
 	}
 
 	
@@ -168,7 +168,7 @@ logo {margin: 20px 0;
 	#slide6 {background: url(pelote.jpg) center 0 no-repeat fixed;}
 	
 	#slide7 {background: url(Iwalkintheforest2.jpg) center 0 no-repeat fixed;
-	border-top : solid 55px #5c0f0f;}
+	border-top : solid 0px #5c0f0f;}
 	
 	#slide8 {background: url(PavlikWorking.jpg) center 0 no-repeat fixed;
 	border-top : solid 0px #5c0f0f;}
@@ -210,7 +210,7 @@ logo {margin: 20px 0;
 #slide5 .slide_inside {
 	
 	margin-top: 0px;
-	padding-top:100px;
+	padding-top:0px;
 	}
 
 #slide7 .slide_inside {
@@ -314,7 +314,7 @@ logo {margin: 20px 0;
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: bold;
 	margin-right: 40px;
-	margin-top: -20px;
+	margin-top: 30px;
 	font-size: 16px;
 	color:#fff;
 	line-height: 24px;
@@ -326,13 +326,13 @@ logo {margin: 20px 0;
 .guillemet21 {
 	width: 800px !important;
 	text-align:right;
-	margin-top: 0px;
-	margin-right: 40px;
+	margin-top: 5px;
+	margin-right: 35px;
 	font-family: 'Passion One', cursive;
 	padding:0px;
-	font-size: 50px;
+	font-size: 40px;
 	color:#fff;
-	line-height: 45px;
+	line-height: 40px;
 	position: inherit;
 	font-style: normal;
 	float: right;
@@ -399,10 +399,10 @@ logo {margin: 20px 0;
 }
 
 .guillemet6 {
-	width: 400px !important;
+	width: 500px !important;
 	text-align:left;
 	font-family: 'Passion One', cursive;
-	margin-top: 125px;
+	margin-top: 75px;
 	
 	padding:0px;
 	font-size: 40px;
@@ -426,6 +426,20 @@ logo {margin: 20px 0;
 	float: left;
 	position: inherit;
 	font-style: normal;
+}
+
+.guillemet8 {
+	width: 500px !important;
+	text-align:center;
+	margin-top: 200px;
+	margin-right: -400px;
+	padding:0px;
+	font-size: 24px;
+	color:#000;
+	line-height: 38px;
+	float: right;
+	position: inherit;
+	font-style: bold, italic;
 }
 
 .para1 {
@@ -591,27 +605,55 @@ background-position: inherit ;
 .para9 {
 	width: 500px;
 	text-align: justify;
-	margin-top: 200px;
-	margin-right: -300px;
+	margin-top: 400px;
+	margin-right: -520px;
 	padding:10px;
 	font-size: 14px;
 	color: #000;
 	line-height: 24px;
 	float: right;
 	position: ;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0);
 	background-position: inherit ;
 }
 
 .para10 {
 	width: 450px;
+	font-size: 18px;
+	line-height: 26px;
+	font-style: bold;
 	text-align: justify;
-	margin-top: 150px;
+	margin-top: 175px;
 	margin-left: -400px;
+	padding:0px;
+	color: #fff;
+	float: left;
+	background-position: inherit ;
+}
+
+.para11 {
+	width: 450px;
+	text-align: justify;
+	margin-top: 325px;
+	margin-left: -450px;
 	padding:0px;
 	font-size: 14px;
 	color: #fff;
 	line-height: 24px;
 	float: left;
+	background-position: inherit ;
+}
+
+.para12{
+	width: 500px;
+	font-size: 16px;
+	line-height: 26px;
+	font-style: bold;
+	text-align: justify;
+	margin-top: 800px;
+	margin-right: -510px;
+	padding:0px;
+	color: #000;
+	float: right;
 	background-position: inherit ;
 }
